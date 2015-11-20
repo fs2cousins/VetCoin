@@ -60,7 +60,9 @@ if(NOT MSVC)
 endif()
 
 add_custom_target(tests DEPENDS CoreTests IntegrationTests NodeRpcProxyTests PerformanceTests SystemTests TransfersTests UnitTests DifficultyTests HashTargetTests)
-
+#
+set(IntegrationTestsLibs IntegrationTestLibrary Wallet NodeRpcProxy InProcessNode P2P Rpc Http Transfers Serialization System CryptoNoteCore Logging Common Crypto BlockchainExplorer gtest upnpc-static ${Boost_LIBRARIES})
+#
 set_property(TARGET
   tests
 
