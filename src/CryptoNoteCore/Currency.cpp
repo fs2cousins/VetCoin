@@ -72,7 +72,7 @@ bool Currency::generateGenesisBlock() {
   m_genesisBlock = boost::value_initialized<Block>();
 
   // Hard code coinbase tx in genesis block, because "tru" generating tx use random, but genesis should be always the same
-  std::string genesisCoinbaseTxHex = GENESIS_COINBASE_TX_HEX = "013c01ff00019ccfaa9e26029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101d9a6571b7d71a835f5fe3cba638954ee5d0ec091f68a0d5c9f189d271ce71915";
+  std::string genesisCoinbaseTxHex = "013c01ff00019ccfaa9e26029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101d9a6571b7d71a835f5fe3cba638954ee5d0ec091f68a0d5c9f189d271ce71915";
   BinaryArray minerTxBlob;
 
   bool r =
