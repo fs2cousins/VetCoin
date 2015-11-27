@@ -91,8 +91,8 @@ else()
       set(CMAKE_AR gcc-ar)
       set(CMAKE_RANLIB gcc-ranlib)
     endif()
-    #This line may be commented out
-    set(RELEASE_FLAGS "${RELEASE_FLAGS} -flto")
+    #Keep this commented out if building Vetcoin for your self.
+    #set(RELEASE_FLAGS "${RELEASE_FLAGS} -flto")
   endif()
   #if(CMAKE_C_COMPILER_ID STREQUAL "GNU" AND NOT MINGW)
   #  set(RELEASE_FLAGS "${RELEASE_FLAGS} -fno-fat-lto-objects")
